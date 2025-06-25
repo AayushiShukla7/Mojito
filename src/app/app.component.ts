@@ -3,10 +3,14 @@ import { RouterOutlet } from '@angular/router';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { SplitText } from 'gsap/SplitText';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [
+    RouterOutlet,
+    NavbarComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

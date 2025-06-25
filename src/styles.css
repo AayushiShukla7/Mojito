@@ -2,12 +2,7 @@
 
 @import "tailwindcss";
 
-.font-face {
-    font-family: "Modern Negra";
-    src: url("/fonts/Modern Negra Demo.ttf") format("truetype");
-}
-
-.theme {
+:root {
     --color-yellow: #e7d393;
     --color-white-100: #efefef;
     --font-sans: "Mona Sans", sans-serif;
@@ -18,10 +13,20 @@
 html,
 body {
     width: 100%;
-    background-color: black;
-    color: white;
+    background-color: black !important;
+    color: white !important;
     scroll-behavior: smooth;
     overflow-x: hidden;
+}
+
+a {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.font-face {
+    font-family: "Modern Negra";
+    src: url("/fonts/Modern Negra Demo.ttf") format("truetype");
 }
 
 .flex-center {
@@ -104,6 +109,10 @@ body {
             justify-content: center;
             align-items: center;
             gap: 7;
+
+            li {
+                margin: auto;
+            }
         }
     }
 
